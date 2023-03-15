@@ -2,7 +2,6 @@ package repositories;
 
 import models.Colet;
 
-import javax.persistence.Entity;
 import javax.persistence.EntityManager;
 
 public class ColetRepositoryImpl implements ColetRepository {
