@@ -1,6 +1,4 @@
-package repositories;
-
-import models.User;
+package Model;
 
 public interface UserRepository {
     User getUserById(int id);

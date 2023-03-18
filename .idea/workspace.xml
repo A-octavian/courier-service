@@ -4,16 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc56d16c-8645-4938-95a8-49dda47e3771" name="Changes" comment="models V1">
-      <change afterPath="$PROJECT_DIR$/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DBConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/UserRepositoryImpl.java" afterDir="false" />
+    <list default="true" id="dc56d16c-8645-4938-95a8-49dda47e3771" name="Changes" comment="login">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Presenter/AdminPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Presenter/CoordPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Presenter/LoginPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Presenter/PostasPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/AdminView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/CoordView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/IAdminView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/ICoordView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/ILoginView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/IPostasView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/LoginView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/PostasView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/forms/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/forms/Login.jfd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate.cfg.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Colet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Colet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/ColetRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/ColetRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/ColetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/ColetRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/ColetRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/ColetRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/UserRepositoryImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,13 +40,27 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
+        <option value="Tag Library Descriptor" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="d2bcc209-cb65-4fb0-8fbb-1367d5fee0a1" />
+        <option name="url" value="https://github.com/A-octavian/courier-service.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -42,25 +73,62 @@
     </option>
   </component>
   <component name="ProjectId" id="2N2gs4TdtOf29VcIQJwr5J8xeFz" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/aocta/Desktop/Courier_Service&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/aocta/Desktop/FoodDelivery",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\aocta\Desktop\Courier_Service\src\main\resources" />
+      <recent name="C:\Users\aocta\Desktop\Courier_Service\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.App" />
+      <module name="Courier_Service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -71,7 +139,11 @@
       <updated>1678867797205</updated>
       <workItem from="1678867798495" duration="905000" />
       <workItem from="1678868919385" duration="6160000" />
-      <workItem from="1678898245879" duration="8112000" />
+      <workItem from="1678898245879" duration="8236000" />
+      <workItem from="1679077789384" duration="1322000" />
+      <workItem from="1679132886870" duration="5804000" />
+      <workItem from="1679139327965" duration="175000" />
+      <workItem from="1679139514875" duration="10854000" />
     </task>
     <task id="LOCAL-00001" summary="models V1">
       <created>1678873027744</created>
@@ -80,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678873027744</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="models V2">
+      <created>1678907506882</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678907506882</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +178,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="models V1" />
-    <option name="LAST_COMMIT_MESSAGE" value="models V1" />
+    <MESSAGE value="models V2" />
+    <MESSAGE value="login" />
+    <option name="LAST_COMMIT_MESSAGE" value="login" />
   </component>
 </project>

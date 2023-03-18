@@ -1,6 +1,4 @@
-package repositories;
-
-import models.Colet;
+package Model;
 
 public interface ColetRepository {
     Colet getColetById(int id);

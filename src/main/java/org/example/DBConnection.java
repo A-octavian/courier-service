@@ -8,17 +8,24 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import javax.persistence.EntityManager;
 
 public class DBConnection {
-    public static EntityManager makeConnection() {
+    private static DBConnection single_db = null;
+    public EntityManager entityManager;
+    private  DBConnection() {
         SessionFactory sessionFactory;
         StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
         try{
             sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
-            return sessionFactory.createEntityManager();
+            entityManager = sessionFactory.createEntityManager();
         }
         catch(Exception e){
             System.out.println(e.getMessage());
         }
-        return null;
+    }
+
+    public static EntityManager getEntityManager() {
+        if( single_db == null)
+           single_db =  new DBConnection();
+        return single_db.entityManager;
     }
 
 }
