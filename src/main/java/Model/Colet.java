@@ -8,7 +8,7 @@ import javax.persistence.Id;
 @Entity
 public class Colet {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String locDest;
     private String locExp;

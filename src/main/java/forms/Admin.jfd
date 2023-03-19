@@ -1,0 +1,69 @@
+JFDML JFormDesigner: "8.0.3.0.246" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {comp AdminPanel:::::x, space :::p}}"
+			"$verticalGroup": "par l {seq l {comp AdminPanel:::::x, space :::p}}"
+		} ) {
+			name: "frame1"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {par l {seq {space :::p, comp scrollPane1:::p:481:p, space :p:47:p, par l:::p {comp button2::::119:x, comp button3::::119:x}}, seq l {space :p:29:p, par l {seq l {par l {comp textField1::l:p:132:p, comp textField3::l:p:132:p, comp textField4::l:p:132:p}, space :p:44:p, par l:::p {comp label4:::p:43:p, comp label1:::p::p, comp label2::l::74:x, comp label3::l::74:x}}, seq l {comp textField2:::p:132:p, space :p:150:p, comp button1:::p::p}}}}, space ::254:x}}"
+				"$verticalGroup": "par l {seq l {par l {seq {space :::p, comp scrollPane1:::p:194:p}, seq l {space :p:72:p, comp button2:::p::p, space s:::p, comp button3:::p::p}}, space :p:29:p, par b {comp textField1::b:p::p, comp label1::b:p::p}, par l {seq {space s:::p, par b {comp textField2::b:p::p, comp label2::b:p::p}}, seq l {space :p:44:p, comp button1:::p::p}}, space :::p, par b {comp textField3::b:p::p, comp label3::b:p::p}, space s:::p, par b {comp textField4::b:p::p, comp label4::b:p::p}, space ::236:x}}"
+			} ) {
+				name: "AdminPanel"
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormComponent( "javax.swing.JTable" ) {
+						name: "users"
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField1"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField2"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField3"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField4"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Id"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Username"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Password"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Role"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "Add"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "Delete"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button3"
+					"text": "Update"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 30, 5 )
+			"size": new java.awt.Dimension( 915, 690 )
+		} )
+	}
+}
+

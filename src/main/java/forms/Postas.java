@@ -1,38 +1,25 @@
-package View;
+/*
+ * Created by JFormDesigner on Sat Mar 18 22:41:01 EET 2023
+ */
 
-import Presenter.PostasPresenter;
+package forms;
 
 import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-public class PostasView implements IPostasView {
-    protected JFrame frame1;
-    protected JPanel panel;
-    protected JTextField textField1;
-    protected JScrollPane scrollPane1;
-    protected JTable table1;
-    PostasPresenter postasPresenter = new PostasPresenter(this);
+/**
+ * @author aocta
+ */
+public class Postas {
+    // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables  @formatter:off
+    // Generated using JFormDesigner Evaluation license - Octavian
+    private JFrame frame1;
+    private JPanel panel;
+    private JTextField textField1;
+    private JScrollPane scrollPane1;
+    private JTable table1;
 
-    public PostasView() {
+    public Postas() {
         initComponents();
-    }
-
-    public JTextField getTextField1() {
-        return textField1;
-    }
-
-    public void setTextField1(JTextField textField1) {
-        this.textField1 = textField1;
-    }
-
-    public JTable getTable1() {
-        return table1;
-    }
-
-    public void setTable1(JTable table1) {
-        this.table1 = table1;
     }
 
     private void initComponents() {
@@ -40,11 +27,9 @@ public class PostasView implements IPostasView {
         // Generated using JFormDesigner Evaluation license - Octavian
         frame1 = new JFrame();
         panel = new JPanel();
-        table1 = new JTable();
-        viewColete();
         textField1 = new JTextField();
         scrollPane1 = new JScrollPane();
-        postasPresenter.findColete();
+        table1 = new JTable();
 
         //======== frame1 ========
         {
@@ -52,15 +37,24 @@ public class PostasView implements IPostasView {
 
             //======== panel ========
             {
+                panel.setBorder(new javax.swing.border.CompoundBorder(new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder
+                        (0, 0, 0, 0), "JF\u006frmDes\u0069gner \u0045valua\u0074ion", javax.swing.border.TitledBorder.CENTER, javax.swing.border
+                        .TitledBorder.BOTTOM, new java.awt.Font("D\u0069alog", java.awt.Font.BOLD, 12), java.awt
+                        .Color.red), panel.getBorder()));
+                panel.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+                    @Override
+                    public void
+                    propertyChange(java.beans.PropertyChangeEvent e) {
+                        if ("\u0062order".equals(e.getPropertyName())) throw new RuntimeException()
+                                ;
+                    }
+                });
+
+                //======== scrollPane1 ========
                 {
                     scrollPane1.setViewportView(table1);
                 }
-                textField1.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        postasPresenter.findColetById();
-                    }
-                });
+
                 GroupLayout panelLayout = new GroupLayout(panel);
                 panel.setLayout(panelLayout);
                 panelLayout.setHorizontalGroup(
@@ -77,10 +71,10 @@ public class PostasView implements IPostasView {
                                 .addGroup(panelLayout.createSequentialGroup()
                                         .addGap(132, 132, 132)
                                         .addComponent(textField1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                                        .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addContainerGap(203, Short.MAX_VALUE))
                                 .addGroup(panelLayout.createSequentialGroup()
-                                        .addComponent(scrollPane1, GroupLayout.PREFERRED_SIZE, 315, GroupLayout.PREFERRED_SIZE)
-                                        .addGap(0, 50, Short.MAX_VALUE))
+                                        .addComponent(scrollPane1, GroupLayout.PREFERRED_SIZE, 210, GroupLayout.PREFERRED_SIZE)
+                                        .addGap(0, 155, Short.MAX_VALUE))
                 );
             }
 
@@ -101,18 +95,8 @@ public class PostasView implements IPostasView {
             );
             frame1.pack();
             frame1.setLocationRelativeTo(frame1.getOwner());
-            frame1.setVisible(true);
         }
+        // JFormDesigner - End of component initialization  //GEN-END:initComponents  @formatter:on
     }
-
-    protected void viewColete() {
-        postasPresenter.findColete();
-    }
-
-    public void noColetFound() {
-        JOptionPane.showMessageDialog(null, "Coletul cu numarul dat nu exista", "Error", JOptionPane.ERROR_MESSAGE);
-    }
-    public void wrongNumber() {
-        JOptionPane.showMessageDialog(null, "Incorrect Id. Please enter a number", "Error", JOptionPane.ERROR_MESSAGE);
-    }
+    // JFormDesigner - End of variables declaration  //GEN-END:variables  @formatter:on
 }

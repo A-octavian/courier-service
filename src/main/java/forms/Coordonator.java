@@ -1,13 +1,19 @@
-package View;
+/*
+ * Created by JFormDesigner on Sun Mar 19 00:08:26 EET 2023
+ */
 
-import Presenter.CoordPresenter;
+package forms;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-public class CoordView extends PostasView implements ICoordView {
-    CoordPresenter coordPresenter = new CoordPresenter(this);
+/**
+ * @author aocta
+ */
+public class Coordonator {
+    // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables  @formatter:off
+    // Generated using JFormDesigner Evaluation license - Octavian
+    private JFrame frame;
+    private JPanel AdminPanel;
     private JTextField textField2;
     private JTextField textField3;
     private JTextField textField4;
@@ -18,32 +24,15 @@ public class CoordView extends PostasView implements ICoordView {
     private JButton button2;
     private JButton button3;
 
-    public CoordView() {
-        super();
+    public Coordonator() {
         initComponents();
     }
 
-    public JTextField getTextField2() {
-        return textField2;
-    }
-
-    public JTextField getTextField3() {
-        return textField3;
-    }
-
-    public JTextField getTextField4() {
-        return textField4;
-    }
-
-    public JTable getTable(){
-        return super.getTable1();
-    }
-
-    public void setTable(JTable table){
-        super.setTable1(table);
-    }
-
     private void initComponents() {
+        // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents  @formatter:off
+        // Generated using JFormDesigner Evaluation license - Octavian
+        frame = new JFrame();
+        AdminPanel = new JPanel();
         textField2 = new JTextField();
         textField3 = new JTextField();
         textField4 = new JTextField();
@@ -53,44 +42,46 @@ public class CoordView extends PostasView implements ICoordView {
         button1 = new JButton();
         button2 = new JButton();
         button3 = new JButton();
-        {
-            var frameContentPane = super.frame1.getContentPane();
-            {
 
+        //======== frame ========
+        {
+            var frameContentPane = frame.getContentPane();
+
+            //======== AdminPanel ========
+            {
+                AdminPanel.setBorder(new javax.swing.border.CompoundBorder(new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder
+                        (0, 0, 0, 0), "JF\u006frmD\u0065sig\u006eer \u0045val\u0075ati\u006fn", javax.swing.border.TitledBorder.CENTER, javax.swing.border
+                        .TitledBorder.BOTTOM, new java.awt.Font("Dia\u006cog", java.awt.Font.BOLD, 12), java.awt
+                        .Color.red), AdminPanel.getBorder()));
+                AdminPanel.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+                    @Override
+                    public void
+                    propertyChange(java.beans.PropertyChangeEvent e) {
+                        if ("\u0062ord\u0065r".equals(e.getPropertyName())) throw new RuntimeException()
+                                ;
+                    }
+                });
+
+                //---- label2 ----
                 label2.setText("Locatie Destinatie");
 
+                //---- label3 ----
                 label3.setText("Locatie Provenienta");
 
+                //---- label4 ----
                 label4.setText("Valoare");
 
+                //---- button1 ----
                 button1.setText("Add");
 
+                //---- button2 ----
                 button2.setText("Delete");
 
+                //---- button3 ----
                 button3.setText("Update");
-                button1.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        coordPresenter.addColet();
-                    }
-                });
 
-                button2.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        coordPresenter.deleteColet();
-                    }
-                });
-                button3.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        coordPresenter.updateColet();
-                    }
-                });
-
-
-                GroupLayout AdminPanelLayout = new GroupLayout(super.panel);
-                super.panel.setLayout(AdminPanelLayout);
+                GroupLayout AdminPanelLayout = new GroupLayout(AdminPanel);
+                AdminPanel.setLayout(AdminPanelLayout);
                 AdminPanelLayout.setHorizontalGroup(
                         AdminPanelLayout.createParallelGroup()
                                 .addGroup(AdminPanelLayout.createSequentialGroup()
@@ -155,34 +146,20 @@ public class CoordView extends PostasView implements ICoordView {
                     frameContentPaneLayout.createParallelGroup()
                             .addGroup(frameContentPaneLayout.createSequentialGroup()
                                     .addContainerGap()
-                                    .addComponent(super.panel, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(AdminPanel, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                                     .addContainerGap(66, Short.MAX_VALUE))
             );
             frameContentPaneLayout.setVerticalGroup(
                     frameContentPaneLayout.createParallelGroup()
                             .addGroup(frameContentPaneLayout.createSequentialGroup()
                                     .addContainerGap()
-                                    .addComponent(super.panel, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(AdminPanel, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addContainerGap())
             );
-            frame1.setVisible(true);
-            frame1.pack();
-            frame1.setLocationRelativeTo(frame1.getOwner());
+            frame.pack();
+            frame.setLocationRelativeTo(frame.getOwner());
         }
-
+        // JFormDesigner - End of component initialization  //GEN-END:initComponents  @formatter:on
     }
-
-    public void emptyFields() {
-        JOptionPane.showMessageDialog(null, "Fields cannot be empty", "Error", JOptionPane.ERROR_MESSAGE);
-    }
-
-    public void viewColete() {
-        super.viewColete();
-    }
-
-    public void noValue() {
-        JOptionPane.showMessageDialog(null, "Valoare must be a number", "Error", JOptionPane.ERROR_MESSAGE);
-    }
-
-
+    // JFormDesigner - End of variables declaration  //GEN-END:variables  @formatter:on
 }

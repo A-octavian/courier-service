@@ -4,33 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc56d16c-8645-4938-95a8-49dda47e3771" name="Changes" comment="login">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Presenter/AdminPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Presenter/CoordPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Presenter/LoginPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Presenter/PostasPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/AdminView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/CoordView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/IAdminView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/ICoordView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/ILoginView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/IPostasView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/LoginView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/PostasView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/forms/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/forms/Login.jfd" afterDir="false" />
+    <list default="true" id="dc56d16c-8645-4938-95a8-49dda47e3771" name="Changes" comment="Postas and Admin">
+      <change afterPath="$PROJECT_DIR$/src/main/java/forms/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/forms/Admin.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/forms/Coordonator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/forms/Coordonator.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/forms/Postas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/forms/Postas.jfd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate.cfg.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Colet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Colet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Colet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Colet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/ColetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/ColetRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/ColetRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/ColetRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/UserRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presenter/AdminPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presenter/AdminPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presenter/CoordPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presenter/CoordPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presenter/LoginPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presenter/LoginPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presenter/PostasPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presenter/PostasPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/AdminView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/AdminView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/CoordView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/CoordView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/IAdminView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/IAdminView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/ICoordView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ICoordView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/ILoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ILoginView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/IPostasView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/IPostasView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/LoginView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/PostasView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/PostasView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/forms/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/forms/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/ColetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/ColetRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/ColetRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/ColetRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/UserRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +44,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="Tag Library Descriptor" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -72,6 +76,9 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2N2gs4TdtOf29VcIQJwr5J8xeFz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -86,14 +93,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/aocta/Desktop/FoodDelivery",
+    "last_opened_file_path": "C:/Users/aocta/Desktop/Courier_Service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Facets",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.37801832",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
@@ -104,6 +111,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\aocta\Desktop\Courier_Service\target\classes" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\aocta\Desktop\Courier_Service\src\main\resources" />
       <recent name="C:\Users\aocta\Desktop\Courier_Service\src" />
@@ -143,7 +153,10 @@
       <workItem from="1679077789384" duration="1322000" />
       <workItem from="1679132886870" duration="5804000" />
       <workItem from="1679139327965" duration="175000" />
-      <workItem from="1679139514875" duration="10854000" />
+      <workItem from="1679139514875" duration="14297000" />
+      <workItem from="1679154455057" duration="599000" />
+      <workItem from="1679155396865" duration="23446000" />
+      <workItem from="1679216623187" duration="7139000" />
     </task>
     <task id="LOCAL-00001" summary="models V1">
       <created>1678873027744</created>
@@ -159,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678907506882</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="login">
+      <created>1679151017584</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679151017584</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,5 +201,10 @@
     <MESSAGE value="models V2" />
     <MESSAGE value="login" />
     <option name="LAST_COMMIT_MESSAGE" value="login" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Courier_Service$App.ic" NAME="App Coverage Results" MODIFIED="1679154313927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.*</FILTER>
+    </SUITE>
   </component>
 </project>

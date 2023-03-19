@@ -7,6 +7,7 @@ public interface UserRepository {
 
     User saveUser(User user);
 
-    void updateUser( int id, String username, String password, String rol);
-    void deleteUser(User user);
+    void updateUser(User user);
+
+    void deleteUser(int id);
 }

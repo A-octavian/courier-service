@@ -2,73 +2,56 @@ package Model;
 
 import org.example.DBConnection;
 
-import javax.persistence.*;
+import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
+import javax.persistence.TypedQuery;
+import java.util.List;
 
 public class UserRepositoryImpl implements UserRepository {
-    private EntityManager em;
+    private final EntityManager em;
 
-//    public UserRepositoryImpl(EntityManager em){
-//        this.em = em;
-//    }
-
-    public UserRepositoryImpl(){
+    public UserRepositoryImpl() {
         em = DBConnection.getEntityManager();
     }
-    public User getUserById(int id){
+
+    public List<User> findAllUsers() {
+        return em.createQuery("Select a FROM User a", User.class).getResultList();
+    }
+
+    public User getUserById(int id) {
 
         return em.find(User.class, id);
     }
 
-    public User getUserByName(String username){
+    public User getUserByName(String username) {
         TypedQuery<User> query = em.createQuery("SELECT u from User u WHERE u.username = : username", User.class);
-        query.setParameter("username",username);
+        query.setParameter("username", username);
         try {
             User u = query.getSingleResult();
             return u;
-        }
-        catch(NoResultException e){
+        } catch (NoResultException e) {
             return null;
         }
     }
 
-    public User saveUser (User user){
+    public User saveUser(User user) {
         em.getTransaction().begin();
-        if(!em.contains(user)){
-            em.persist(user);
-        }
-        else user = em.merge(user);
+        em.persist(user);
         em.getTransaction().commit();
         return user;
     }
 
-    public void updateUser( int id, String username, String password, String rol){
+    public void updateUser(User user) {
         em.getTransaction().begin();
-        User user = getUserById(id);
-        if ( user == null){
-            user = new User(id,username,password,rol);
-            em.persist(user);
-        } else {
-            if (username != null){
-                user.setUsername(username);
-            }
-            if( password != null){
-                user.setPassword(password);
-            }
-            if(rol != null){
-                user.setRole(rol);
-            }
-            em.merge(user);
-        }
+        em.merge(user);
         em.getTransaction().commit();
     }
 
-    public void deleteUser(User user){
+
+    public void deleteUser(int id) {
         em.getTransaction().begin();
-        if(em.contains(user)) {
-            em.remove(user);
-        } else {
-            em.merge(user);
-        }
+        User user = getUserById(id);
+        em.remove(user);
         em.getTransaction().commit();
     }
 }

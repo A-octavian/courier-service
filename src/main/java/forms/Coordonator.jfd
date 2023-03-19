@@ -1,0 +1,55 @@
+JFDML JFormDesigner: "8.0.3.0.246" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp AdminPanel:::p::p, space ::66:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp AdminPanel:::::x, space :::p}}"
+		} ) {
+			name: "frame"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:29:p, par l {comp textField2::t:p:132:p, comp textField3::t:p:132:p, comp textField4::t:p:132:p}, space s:::p, par l {comp label2:::::x, seq {par l {comp label4:::p:68:p, seq l {comp label3:::p:117:p, space s:::p, comp button1:::p::p}}, space :0:348:x}}, space :::p}, seq {space :p:534:p, par l {comp button2:::::x, seq {space :0:0:x, comp button3:::p:119:p}}, space ::93:x}}"
+				"$verticalGroup": "par l {seq l {par l {seq l {space :p:162:p, comp button2:::p::p, space u:::p, comp button3:::p::p, space :::x, par b {comp textField2::b:p::p, comp label2::b:p::p}, space :::p, comp button1:::p::p, space :p:6:p}, seq l {space :p:387:p, par b {comp textField3::b:p::p, comp label3::b:p::p}, space :::x}}, par b {comp textField4::b:p::p, comp label4::b:p::p}, space :p:14:p}}"
+			} ) {
+				name: "AdminPanel"
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField2"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField3"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField4"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Locatie Destinatie"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Locatie Provenienta"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Valoare"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "Add"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "Delete"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button3"
+					"text": "Update"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 820, 510 )
+			"location": new java.awt.Point( 25, 10 )
+		} )
+	}
+}

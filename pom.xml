@@ -16,6 +16,12 @@
     <maven.compiler.target>17</maven.compiler.target>
   </properties>
 
+  <dependency>
+    <groupId>javax.persistence</groupId>
+    <artifactId>persistence-api</artifactId>
+    <version>2.2</version>
+  </dependency>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>

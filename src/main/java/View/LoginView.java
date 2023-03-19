@@ -1,17 +1,41 @@
 package View;
 
 import Presenter.LoginPresenter;
+
 import javax.swing.*;
-import javax.swing.GroupLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class LoginView implements ILoginView{
+public class LoginView implements ILoginView {
     LoginPresenter loginPresenter = new LoginPresenter(this);
-    public LoginView (){
+    private JFrame frame1;
+    private JPanel LoginPanel;
+    private JTextField textField1;
+    private JLabel Login;
+    private JLabel label1;
+    private JPasswordField passwordField1;
+    private JLabel label2;
+    private JButton button1;
+
+    public LoginView() {
         initComponents();
     }
 
+    public JTextField getTextField1() {
+        return textField1;
+    }
+
+    public void setTextField1(JTextField textField1) {
+        this.textField1 = textField1;
+    }
+
+    public JPasswordField getPasswordField1() {
+        return passwordField1;
+    }
+
+    public void setPasswordField1(JPasswordField passwordField1) {
+        this.passwordField1 = passwordField1;
+    }
 
     private void initComponents() {
         frame1 = new JFrame();
@@ -34,9 +58,9 @@ public class LoginView implements ILoginView{
                 label2.setText("Password");
 
                 button1.setText("Login");
-                button1.addActionListener(new ActionListener(){
-                    public void actionPerformed(ActionEvent e){
-                        loginVerify();
+                button1.addActionListener(new ActionListener() {
+                    public void actionPerformed(ActionEvent e) {
+                        loginPresenter.loginVerify();
                     }
                 });
 
@@ -103,23 +127,11 @@ public class LoginView implements ILoginView{
         }
     }
 
-    private JFrame frame1;
-    private JPanel LoginPanel;
-    private JTextField textField1;
-    private JLabel Login;
-    private JLabel label1;
-    private JPasswordField passwordField1;
-    private JLabel label2;
-    private JButton button1;
-
-    private void loginVerify(){
-        loginPresenter.loginVerify(textField1.getText(),new String(passwordField1.getPassword()));
+    public void noUser() {
+        JOptionPane.showMessageDialog(null, "No user with this name found", "Error", JOptionPane.ERROR_MESSAGE);
     }
 
-    public void noUser(){
-        JOptionPane.showMessageDialog(null,"No user with this name found","Error",JOptionPane.ERROR_MESSAGE);
-    }
-    public void wrongPassword(){
-        JOptionPane.showMessageDialog(null,"Wrong Password","Error",JOptionPane.ERROR_MESSAGE);
+    public void wrongPassword() {
+        JOptionPane.showMessageDialog(null, "Wrong Password", "Error", JOptionPane.ERROR_MESSAGE);
     }
 }
