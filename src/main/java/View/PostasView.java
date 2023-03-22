@@ -3,19 +3,18 @@ package View;
 import Presenter.PostasPresenter;
 
 import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class PostasView implements IPostasView {
+    private JTextField textField1;
+    private JTable table1;
     protected JFrame frame1;
     protected JPanel panel;
-    protected JTextField textField1;
-    protected JScrollPane scrollPane1;
-    protected JTable table1;
-    PostasPresenter postasPresenter = new PostasPresenter(this);
+    private final PostasPresenter postasPresenter;
 
     public PostasView() {
+        postasPresenter = new PostasPresenter(this);
         initComponents();
     }
 
@@ -23,9 +22,6 @@ public class PostasView implements IPostasView {
         return textField1;
     }
 
-    public void setTextField1(JTextField textField1) {
-        this.textField1 = textField1;
-    }
 
     public JTable getTable1() {
         return table1;
@@ -36,14 +32,12 @@ public class PostasView implements IPostasView {
     }
 
     private void initComponents() {
-        // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents  @formatter:off
-        // Generated using JFormDesigner Evaluation license - Octavian
         frame1 = new JFrame();
         panel = new JPanel();
         table1 = new JTable();
         viewColete();
         textField1 = new JTextField();
-        scrollPane1 = new JScrollPane();
+        JScrollPane scrollPane1 = new JScrollPane();
         postasPresenter.findColete();
 
         //======== frame1 ========
@@ -55,12 +49,7 @@ public class PostasView implements IPostasView {
                 {
                     scrollPane1.setViewportView(table1);
                 }
-                textField1.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        postasPresenter.findColetById();
-                    }
-                });
+                textField1.addActionListener(e -> postasPresenter.findColetById());
                 GroupLayout panelLayout = new GroupLayout(panel);
                 panel.setLayout(panelLayout);
                 panelLayout.setHorizontalGroup(

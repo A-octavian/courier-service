@@ -7,11 +7,12 @@ public interface ILoginView {
 
     void wrongPassword();
 
-    public JTextField getTextField1();
+    void startAdmin();
+    void startCoord();
+    void startPostas();
 
-    public void setTextField1(JTextField textField1);
+    JTextField getTextField1();
 
-    public JPasswordField getPasswordField1();
+    JPasswordField getPasswordField1();
 
-    public void setPasswordField1(JPasswordField passwordField1);
 }

@@ -3,28 +3,18 @@ package View;
 import Presenter.AdminPresenter;
 
 import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class AdminView implements IAdminView {
-    AdminPresenter adminPresenter = new AdminPresenter(this);
-    private JFrame frame1;
-    private JPanel AdminPanel;
-    private JScrollPane scrollPane1;
+    private final AdminPresenter adminPresenter ;
     private JTable users;
     private JTextField textField2;
     private JTextField textField3;
     private JTextField textField4;
-    private JLabel label1;
-    private JLabel label2;
-    private JLabel label3;
-    private JLabel label4;
-    private JButton button1;
-    private JButton button2;
-    private JButton button3;
 
     public AdminView() {
+        adminPresenter= new AdminPresenter(this);
         initComponents();
     }
 
@@ -40,41 +30,32 @@ public class AdminView implements IAdminView {
         return textField2;
     }
 
-    public void setTextField2(JTextField textField2) {
-        this.textField2 = textField2;
-    }
 
     public JTextField getTextField3() {
         return textField3;
     }
 
-    public void setTextField3(JTextField textField3) {
-        this.textField3 = textField3;
-    }
 
     public JTextField getTextField4() {
         return textField4;
     }
 
-    public void setTextField4(JTextField textField4) {
-        this.textField4 = textField4;
-    }
 
     private void initComponents() {
-        frame1 = new JFrame();
-        AdminPanel = new JPanel();
-        scrollPane1 = new JScrollPane();
+        JFrame frame1 = new JFrame();
+        JPanel adminPanel = new JPanel();
+        JScrollPane scrollPane1 = new JScrollPane();
         users = new JTable();
         adminPresenter.findAllUsers();
         textField2 = new JTextField();
         textField3 = new JTextField();
         textField4 = new JTextField();
-        label2 = new JLabel();
-        label3 = new JLabel();
-        label4 = new JLabel();
-        button1 = new JButton();
-        button2 = new JButton();
-        button3 = new JButton();
+        JLabel label2 = new JLabel();
+        JLabel label3 = new JLabel();
+        JLabel label4 = new JLabel();
+        JButton button1 = new JButton();
+        JButton button2 = new JButton();
+        JButton button3 = new JButton();
 
         {
             var frame1ContentPane = frame1.getContentPane();
@@ -117,8 +98,8 @@ public class AdminView implements IAdminView {
                     }
                 });
 
-                GroupLayout AdminPanelLayout = new GroupLayout(AdminPanel);
-                AdminPanel.setLayout(AdminPanelLayout);
+                GroupLayout AdminPanelLayout = new GroupLayout(adminPanel);
+                adminPanel.setLayout(AdminPanelLayout);
                 AdminPanelLayout.setHorizontalGroup(
                         AdminPanelLayout.createParallelGroup()
                                 .addGroup(AdminPanelLayout.createSequentialGroup()
@@ -187,13 +168,13 @@ public class AdminView implements IAdminView {
             frame1ContentPaneLayout.setHorizontalGroup(
                     frame1ContentPaneLayout.createParallelGroup()
                             .addGroup(frame1ContentPaneLayout.createSequentialGroup()
-                                    .addComponent(AdminPanel, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(adminPanel, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addContainerGap())
             );
             frame1ContentPaneLayout.setVerticalGroup(
                     frame1ContentPaneLayout.createParallelGroup()
                             .addGroup(frame1ContentPaneLayout.createSequentialGroup()
-                                    .addComponent(AdminPanel, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(adminPanel, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addContainerGap())
             );
             frame1.pack();
@@ -202,16 +183,8 @@ public class AdminView implements IAdminView {
         }
     }
 
-    public void changeId(){
-        JOptionPane.showMessageDialog(null, "ID cannot be changed", "Error", JOptionPane.ERROR_MESSAGE);
-    }
-
-    public void wrongNumber() {
-        JOptionPane.showMessageDialog(null, "Incorrect Id. Please enter a number", "Error", JOptionPane.ERROR_MESSAGE);
-    }
-
-    public void showUsers(DefaultTableModel model) {
-        users.setModel(model);
+    public void changeId() {
+        JOptionPane.showMessageDialog(null, "ID must be an integer", "Error", JOptionPane.ERROR_MESSAGE);
     }
 
     public void wrongRole() {

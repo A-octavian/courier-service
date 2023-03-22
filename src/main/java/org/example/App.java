@@ -2,6 +2,7 @@ package org.example;
 
 
 import Model.Colet;
+import Model.DBConnection;
 import Model.User;
 import View.LoginView;
 
@@ -23,6 +24,7 @@ public class App {
         em.getTransaction().begin();
         em.persist(u);
         em.getTransaction().commit();
+
         em.getTransaction().begin();
         em.persist(u1);
         em.getTransaction().commit();
@@ -32,9 +34,9 @@ public class App {
     }
 
     public static void addColete() {
-        Colet c1 = new Colet("Bucuresti", "Cluj-Napoca", Float.valueOf(31));
-        Colet c2 = new Colet("Cluj-Napoca", "Bucuresti", Float.valueOf(66));
-        Colet c3 = new Colet("Timisoara", "Craiova", Float.valueOf(25));
+        Colet c1 = new Colet("Bucuresti", "Cluj-Napoca", 31.77F);
+        Colet c2 = new Colet("Cluj-Napoca", "Bucuresti", 66.1F);
+        Colet c3 = new Colet("Timisoara", "Craiova", 25.2F);
         EntityManager em = DBConnection.getEntityManager();
         em.getTransaction().begin();
         em.persist(c1);

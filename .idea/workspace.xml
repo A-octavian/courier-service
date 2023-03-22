@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc56d16c-8645-4938-95a8-49dda47e3771" name="Changes" comment="Postas and Admin">
-      <change afterPath="$PROJECT_DIR$/src/main/java/forms/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/forms/Admin.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/forms/Coordonator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/forms/Coordonator.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/forms/Postas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/forms/Postas.jfd" afterDir="false" />
+    <list default="true" id="dc56d16c-8645-4938-95a8-49dda47e3771" name="Changes" comment="final v1.0">
+      <change afterPath="$PROJECT_DIR$/src/test/java/code/AdminRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/code/ColetRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/code/DBConnectionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Colet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Colet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/ColetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/ColetRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/ColetRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/ColetRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/User.java" afterDir="false" />
@@ -31,10 +27,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/View/IPostasView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/IPostasView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/LoginView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/PostasView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/PostasView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/forms/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/forms/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/code/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,29 +82,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/aocta/Desktop/Courier_Service",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.37801832",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/aocta/Desktop/Courier_Service&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.37801832&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\aocta\Desktop\Courier_Service\target\classes" />
@@ -119,23 +114,94 @@
       <recent name="C:\Users\aocta\Desktop\Courier_Service\src" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.App" />
+  <component name="RunManager" selected="JUnit.DBConnectionTest.testMultipleConnection">
+    <configuration name="ColetRepositoryTest.testDeleteColet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Courier_Service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="code.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="code" />
+      <option name="MAIN_CLASS_NAME" value="code.ColetRepositoryTest" />
+      <option name="METHOD_NAME" value="testDeleteColet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ColetRepositoryTest.testListaColete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Courier_Service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="code" />
+      <option name="MAIN_CLASS_NAME" value="code.ColetRepositoryTest" />
+      <option name="METHOD_NAME" value="testListaColete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ColetRepositoryTest.testSearchColet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Courier_Service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="code" />
+      <option name="MAIN_CLASS_NAME" value="code.ColetRepositoryTest" />
+      <option name="METHOD_NAME" value="testSearchColet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DBConnectionTest.testConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Courier_Service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="code" />
+      <option name="MAIN_CLASS_NAME" value="code.DBConnectionTest" />
+      <option name="METHOD_NAME" value="testConnection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DBConnectionTest.testMultipleConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Courier_Service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="code" />
+      <option name="MAIN_CLASS_NAME" value="code.DBConnectionTest" />
+      <option name="METHOD_NAME" value="testMultipleConnection" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.DBConnectionTest.testMultipleConnection" />
+        <item itemvalue="JUnit.DBConnectionTest.testConnection" />
+        <item itemvalue="JUnit.ColetRepositoryTest.testListaColete" />
+        <item itemvalue="JUnit.ColetRepositoryTest.testSearchColet" />
+        <item itemvalue="JUnit.ColetRepositoryTest.testDeleteColet" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +222,11 @@
       <workItem from="1679139514875" duration="14297000" />
       <workItem from="1679154455057" duration="599000" />
       <workItem from="1679155396865" duration="23446000" />
-      <workItem from="1679216623187" duration="7139000" />
+      <workItem from="1679216623187" duration="14429000" />
+      <workItem from="1679397031748" duration="101000" />
+      <workItem from="1679427120898" duration="4472000" />
+      <workItem from="1679472514899" duration="897000" />
+      <workItem from="1679474638147" duration="9750000" />
     </task>
     <task id="LOCAL-00001" summary="models V1">
       <created>1678873027744</created>
@@ -179,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679151017584</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="final v1.0">
+      <created>1679224788333</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679224788333</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +277,15 @@
     <MESSAGE value="models V1" />
     <MESSAGE value="models V2" />
     <MESSAGE value="login" />
-    <option name="LAST_COMMIT_MESSAGE" value="login" />
+    <MESSAGE value="final v1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="final v1.0" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.AdminRepositoryTest" memberName="userRepository" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Courier_Service$App.ic" NAME="App Coverage Results" MODIFIED="1679154313927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

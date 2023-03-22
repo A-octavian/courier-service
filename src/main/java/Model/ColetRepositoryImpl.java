@@ -1,14 +1,10 @@
 package Model;
 
-import org.example.DBConnection;
-
 import javax.persistence.EntityManager;
 import java.util.List;
 
 public class ColetRepositoryImpl implements ColetRepository {
-
     private final EntityManager em;
-
 
     public ColetRepositoryImpl() {
 
@@ -32,38 +28,40 @@ public class ColetRepositoryImpl implements ColetRepository {
         return c;
     }
 
-    public void deleteColet(Colet c) {
-        em.getTransaction().begin();
-        if (em.contains(c)) {
-            em.remove(c);
-        } else em.merge(c);
-        em.getTransaction().commit();
-    }
+//    public void deleteColet(Colet c) {
+//        em.getTransaction().begin();
+//        if (em.contains(c)) {
+//            em.remove(c);
+//        } else em.merge(c);
+//        em.getTransaction().commit();
+//    }
 
-    public void deleteColet(int id) {
-        em.getTransaction().begin();
+    public boolean deleteColet(int id) {
         Colet colet = getColetById(id);
+        if(colet == null) return false;
+        em.getTransaction().begin();
         em.remove(colet);
         em.getTransaction().commit();
+        return true;
     }
 
-    public void updateColet(int id, String locDest, String locExp, Float valoare) {
-        em.getTransaction().begin();
-        Colet c = getColetById(id);
-        if (c == null) {
-            c = new Colet(id, locDest, locExp, valoare);
-            em.persist(c);
-        } else {
-            if (locDest != null)
-                c.setLocDest(locDest);
-            if (locExp != null)
-                c.setLocExp(locExp);
-            if (valoare != null)
-                c.setValoare(valoare);
-            em.merge(c);
-        }
-        em.getTransaction().commit();
-    }
+//    public void updateColet(int id, String locDest, String locExp, Float valoare) {
+//        em.getTransaction().begin();
+//        Colet c = getColetById(id);
+//        if (c == null) {
+//            c = new Colet(id, locDest, locExp, valoare);
+//            em.persist(c);
+//        } else {
+//            if (locDest != null)
+//                c.setLocDest(locDest);
+//            if (locExp != null)
+//                c.setLocExp(locExp);
+//            if (valoare != null)
+//                c.setValoare(valoare);
+//            em.merge(c);
+//        }
+//        em.getTransaction().commit();
+//    }
 
     public void updateColet(Colet c) {
         em.getTransaction().begin();

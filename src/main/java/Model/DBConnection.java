@@ -1,4 +1,4 @@
-package org.example;
+package Model;
 
 
 import org.hibernate.SessionFactory;
@@ -10,7 +10,7 @@ import javax.persistence.EntityManager;
 
 public class DBConnection {
     private static DBConnection single_db = null;
-    public EntityManager entityManager;
+    private EntityManager entityManager;
 
     private DBConnection() {
         SessionFactory sessionFactory;

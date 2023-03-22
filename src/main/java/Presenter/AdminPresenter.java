@@ -1,6 +1,7 @@
 package Presenter;
 
 import Model.User;
+import Model.UserRepository;
 import Model.UserRepositoryImpl;
 import View.AdminView;
 import View.IAdminView;
@@ -10,7 +11,7 @@ import javax.swing.table.DefaultTableModel;
 import java.util.List;
 
 public class AdminPresenter {
-    UserRepositoryImpl userRepository;
+    UserRepository userRepository;
     IAdminView adminView;
 
     public AdminPresenter(AdminView adminView) {

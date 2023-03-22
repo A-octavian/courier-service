@@ -7,19 +7,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class CoordView extends PostasView implements ICoordView {
-    CoordPresenter coordPresenter = new CoordPresenter(this);
+    CoordPresenter coordPresenter ;
     private JTextField textField2;
     private JTextField textField3;
     private JTextField textField4;
-    private JLabel label2;
-    private JLabel label3;
-    private JLabel label4;
-    private JButton button1;
-    private JButton button2;
-    private JButton button3;
 
     public CoordView() {
         super();
+        coordPresenter = new CoordPresenter(this);
         initComponents();
     }
 
@@ -39,20 +34,17 @@ public class CoordView extends PostasView implements ICoordView {
         return super.getTable1();
     }
 
-    public void setTable(JTable table){
-        super.setTable1(table);
-    }
 
     private void initComponents() {
         textField2 = new JTextField();
         textField3 = new JTextField();
         textField4 = new JTextField();
-        label2 = new JLabel();
-        label3 = new JLabel();
-        label4 = new JLabel();
-        button1 = new JButton();
-        button2 = new JButton();
-        button3 = new JButton();
+        JLabel label2 = new JLabel();
+        JLabel label3 = new JLabel();
+        JLabel label4 = new JLabel();
+        JButton button1 = new JButton();
+        JButton button2 = new JButton();
+        JButton button3 = new JButton();
         {
             var frameContentPane = super.frame1.getContentPane();
             {

@@ -8,12 +8,11 @@ public interface ICoordView {
     void viewColete();
 
     void noValue();
-    public JTextField getTextField2();
+    JTextField getTextField2();
 
-    public JTextField getTextField3() ;
+    JTextField getTextField3() ;
 
-    public JTextField getTextField4() ;
-    public JTable getTable();
+    JTextField getTextField4() ;
+    JTable getTable();
 
-    public void setTable(JTable table);
 }

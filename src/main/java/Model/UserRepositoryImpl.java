@@ -1,7 +1,5 @@
 package Model;
 
-import org.example.DBConnection;
-
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.TypedQuery;
@@ -19,7 +17,6 @@ public class UserRepositoryImpl implements UserRepository {
     }
 
     public User getUserById(int id) {
-
         return em.find(User.class, id);
     }
 
@@ -47,11 +44,12 @@ public class UserRepositoryImpl implements UserRepository {
         em.getTransaction().commit();
     }
 
-
-    public void deleteUser(int id) {
-        em.getTransaction().begin();
+    public boolean deleteUser(int id) {
         User user = getUserById(id);
+        if( user == null) return false;
+        em.getTransaction().begin();
         em.remove(user);
         em.getTransaction().commit();
+        return true;
     }
 }

@@ -17,20 +17,6 @@ public class CoordPresenter {
         coletRepository = new ColetRepositoryImpl();
     }
 
-//    public void findColete(){
-//        List<Colet> colete = coletRepository.findColete();
-//        String[] col = {"ID","Locatie Destinatie","Locatie Provenienta","Valoare"};
-//        DefaultTableModel model = new DefaultTableModel(new Object[0][0],col);
-//        for( Colet c : colete){
-//            Object[] o = new Object[4];
-//            o[0] = c.getId();
-//            o[1] = c.getLocDest();
-//            o[2] = c.getLocExp();
-//            o[3] = c.getValoare();
-//            model.addRow(o);
-//        }
-//        coordView.showColete(model);
-//    }
 
     public void addColet() {
         String locD = coordView.getTextField2().getText();
@@ -40,7 +26,7 @@ public class CoordPresenter {
             coordView.emptyFields();
             return;
         }
-        Float v;
+        float v;
         try {
             v = Float.parseFloat(valoare);
         } catch (NumberFormatException e) {

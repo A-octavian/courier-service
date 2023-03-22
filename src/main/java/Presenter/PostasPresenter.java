@@ -11,8 +11,8 @@ import javax.swing.table.DefaultTableModel;
 import java.util.List;
 
 public class PostasPresenter {
-    ColetRepository coletRepository;
-    IPostasView postasView;
+    private ColetRepository coletRepository;
+    private IPostasView postasView;
 
     public PostasPresenter(PostasView postasView) {
         coletRepository = new ColetRepositoryImpl();

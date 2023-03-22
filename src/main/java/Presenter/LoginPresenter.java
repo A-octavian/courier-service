@@ -1,11 +1,12 @@
 package Presenter;
 
 import Model.User;
+import Model.UserRepository;
 import Model.UserRepositoryImpl;
 import View.*;
 
 public class LoginPresenter {
-    UserRepositoryImpl userRepository;
+    UserRepository userRepository;
     ILoginView loginView;
 
     public LoginPresenter(LoginView loginView) {
@@ -23,15 +24,15 @@ public class LoginPresenter {
         }
         if (user.getPassword().equals(pass)) {
             if (user.getRole().equals("admin")) {
-                new AdminView();
+                loginView.startAdmin();
                 return;
             }
             if (user.getRole().equals("coordonator")) {
-                new CoordView();
+                loginView.startCoord();
                 return;
             }
             if (user.getRole().equals("postas")) {
-                new PostasView();
+                loginView.startPostas();
             }
         } else loginView.wrongPassword();
 

@@ -7,17 +7,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class LoginView implements ILoginView {
-    LoginPresenter loginPresenter = new LoginPresenter(this);
-    private JFrame frame1;
-    private JPanel LoginPanel;
+    private LoginPresenter loginPresenter ;
     private JTextField textField1;
-    private JLabel Login;
-    private JLabel label1;
     private JPasswordField passwordField1;
-    private JLabel label2;
-    private JButton button1;
 
     public LoginView() {
+        loginPresenter = new LoginPresenter(this);
         initComponents();
     }
 
@@ -25,33 +20,25 @@ public class LoginView implements ILoginView {
         return textField1;
     }
 
-    public void setTextField1(JTextField textField1) {
-        this.textField1 = textField1;
-    }
-
     public JPasswordField getPasswordField1() {
         return passwordField1;
     }
 
-    public void setPasswordField1(JPasswordField passwordField1) {
-        this.passwordField1 = passwordField1;
-    }
-
     private void initComponents() {
-        frame1 = new JFrame();
-        LoginPanel = new JPanel();
+        JFrame frame1 = new JFrame();
+        JPanel loginPanel = new JPanel();
         textField1 = new JTextField();
-        Login = new JLabel();
-        label1 = new JLabel();
+        JLabel login = new JLabel();
+        JLabel label1 = new JLabel();
         passwordField1 = new JPasswordField();
-        label2 = new JLabel();
-        button1 = new JButton();
+        JLabel label2 = new JLabel();
+        JButton button1 = new JButton();
 
         {
             var frame1ContentPane = frame1.getContentPane();
 
             {
-                Login.setText("Login");
+                login.setText("Login");
 
                 label1.setText("Username");
 
@@ -64,15 +51,15 @@ public class LoginView implements ILoginView {
                     }
                 });
 
-                GroupLayout LoginPanelLayout = new GroupLayout(LoginPanel);
-                LoginPanel.setLayout(LoginPanelLayout);
+                GroupLayout LoginPanelLayout = new GroupLayout(loginPanel);
+                loginPanel.setLayout(LoginPanelLayout);
                 LoginPanelLayout.setHorizontalGroup(
                         LoginPanelLayout.createParallelGroup()
                                 .addGroup(LoginPanelLayout.createSequentialGroup()
                                         .addContainerGap()
                                         .addGroup(LoginPanelLayout.createParallelGroup()
                                                 .addGroup(GroupLayout.Alignment.TRAILING, LoginPanelLayout.createSequentialGroup()
-                                                        .addComponent(Login)
+                                                        .addComponent(login)
                                                         .addGap(136, 136, 136))
                                                 .addGroup(GroupLayout.Alignment.TRAILING, LoginPanelLayout.createSequentialGroup()
                                                         .addGroup(LoginPanelLayout.createParallelGroup()
@@ -92,7 +79,7 @@ public class LoginView implements ILoginView {
                         LoginPanelLayout.createParallelGroup()
                                 .addGroup(LoginPanelLayout.createSequentialGroup()
                                         .addGap(20, 20, 20)
-                                        .addComponent(Login)
+                                        .addComponent(login)
                                         .addGap(18, 18, 18)
                                         .addGroup(LoginPanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                                                 .addComponent(textField1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
@@ -113,18 +100,28 @@ public class LoginView implements ILoginView {
                     frame1ContentPaneLayout.createParallelGroup()
                             .addGroup(GroupLayout.Alignment.TRAILING, frame1ContentPaneLayout.createSequentialGroup()
                                     .addGap(0, 0, Short.MAX_VALUE)
-                                    .addComponent(LoginPanel, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(loginPanel, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
             );
             frame1ContentPaneLayout.setVerticalGroup(
                     frame1ContentPaneLayout.createParallelGroup()
                             .addGroup(frame1ContentPaneLayout.createSequentialGroup()
-                                    .addComponent(LoginPanel, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(loginPanel, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                                     .addGap(0, 8, Short.MAX_VALUE))
             );
             frame1.pack();
             frame1.setLocationRelativeTo(frame1.getOwner());
             frame1.setVisible(true);
         }
+    }
+
+    public void startAdmin(){
+        new AdminView();
+    }
+    public void startCoord(){
+        new CoordView();
+    }
+    public void startPostas(){
+        new PostasView();
     }
 
     public void noUser() {
